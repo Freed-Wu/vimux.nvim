@@ -1,0 +1,30 @@
+# vimux.nvim
+
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/Freed-Wu/vimux.nvim/main.svg)](https://results.pre-commit.ci/latest/github/Freed-Wu/vimux.nvim/main)
+[![github/workflow](https://github.com/Freed-Wu/vimux.nvim/actions/workflows/main.yml/badge.svg)](https://github.com/Freed-Wu/vimux.nvim/actions)
+
+[![github/downloads](https://shields.io/github/downloads/Freed-Wu/vimux.nvim/total)](https://github.com/Freed-Wu/vimux.nvim/releases)
+[![github/downloads/latest](https://shields.io/github/downloads/Freed-Wu/vimux.nvim/latest/total)](https://github.com/Freed-Wu/vimux.nvim/releases/latest)
+[![github/issues](https://shields.io/github/issues/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/issues)
+[![github/issues-closed](https://shields.io/github/issues-closed/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/issues?q=is%3Aissue+is%3Aclosed)
+[![github/issues-pr](https://shields.io/github/issues-pr/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/pulls)
+[![github/issues-pr-closed](https://shields.io/github/issues-pr-closed/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/pulls?q=is%3Apr+is%3Aclosed)
+[![github/discussions](https://shields.io/github/discussions/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/discussions)
+[![github/milestones](https://shields.io/github/milestones/all/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/milestones)
+[![github/forks](https://shields.io/github/forks/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/network/members)
+[![github/stars](https://shields.io/github/stars/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/stargazers)
+[![github/watchers](https://shields.io/github/watchers/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/watchers)
+[![github/contributors](https://shields.io/github/contributors/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/graphs/contributors)
+[![github/commit-activity](https://shields.io/github/commit-activity/w/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/graphs/commit-activity)
+[![github/last-commit](https://shields.io/github/last-commit/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/commits)
+[![github/release-date](https://shields.io/github/release-date/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/releases/latest)
+
+[![github/license](https://shields.io/github/license/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim/blob/main/LICENSE)
+[![github/languages](https://shields.io/github/languages/count/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim)
+[![github/languages/top](https://shields.io/github/languages/top/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim)
+[![github/directory-file-count](https://shields.io/github/directory-file-count/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim)
+[![github/code-size](https://shields.io/github/languages/code-size/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim)
+[![github/repo-size](https://shields.io/github/repo-size/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim)
+[![github/v](https://shields.io/github/v/release/Freed-Wu/vimux.nvim)](https://github.com/Freed-Wu/vimux.nvim)
+
+[![luarocks](https://img.shields.io/luarocks/v/Freed-Wu/vimux.nvim)](https://luarocks.org/modules/Freed-Wu/vimux.nvim)
