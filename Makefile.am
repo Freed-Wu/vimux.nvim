@@ -3,9 +3,10 @@ lib_LTLIBRARIES=libvimux.la
 CLEANFILES = src/tmux.1.mdoc src/tmux.1.man src/cmd-parse.c
 
 # Distribution tarball options.
+# https://github.com/tmux/tmux/pull/4137
 EXTRA_DIST = \
 	src/CHANGES src/README src/README.ja src/COPYING src/example_tmux.conf \
-	src/osdep-*.c src/mdoc2man.awk src/tmux.1
+	osdep-*.c src/mdoc2man.awk src/tmux.1
 dist_EXTRA_libvimux_la_SOURCES = src/compat/*.[ch]
 
 # Preprocessor flags.
@@ -68,6 +69,7 @@ AM_CPPFLAGS += -D_BSD_SOURCE
 endif
 
 # List of sources.
+# https://github.com/tmux/tmux/pull/4138
 dist_libvimux_la_SOURCES = \
 	src/alerts.c \
 	src/arguments.c \
@@ -190,7 +192,7 @@ dist_libvimux_la_SOURCES = \
 	src/tty-features.c \
 	src/tty-keys.c \
 	src/tty-term.c \
-	src/tty.c \
+	tty.c \
 	src/utf8-combined.c \
 	src/utf8.c \
 	src/window-buffer.c \
@@ -202,7 +204,7 @@ dist_libvimux_la_SOURCES = \
 	src/window.c \
 	src/xmalloc.c \
 	src/xmalloc.h
-nodist_libvimux_la_SOURCES = src/osdep-@PLATFORM@.c
+nodist_libvimux_la_SOURCES = osdep-@PLATFORM@.c
 
 # Add compat file for forkpty.
 if NEED_FORKPTY

@@ -39,6 +39,7 @@ struct options	*global_w_options;	/* window options */
 struct environ	*global_environ;
 uint64_t				 flags;
 int feat;
+struct event_base *event;
 
 struct timeval	 start_time;
 const char	*socket_path;
@@ -538,7 +539,7 @@ init(int argc, char **argv)
 /* Pass control to the client. */
 int
 tmux(int argc, char **argv) {
-	struct event_base *event = osdep_event_init();
+	event = osdep_event_init();
 	int i = client_main(event, argc, argv, flags, feat);
 	event_base_free(event);
 	return i;
