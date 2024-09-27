@@ -37,6 +37,8 @@ struct options	*global_options;	/* server options */
 struct options	*global_s_options;	/* session options */
 struct options	*global_w_options;	/* window options */
 struct environ	*global_environ;
+uint64_t				 flags;
+int feat;
 
 struct timeval	 start_time;
 const char	*socket_path;
@@ -346,14 +348,13 @@ getversion(void)
 	return (TMUX_VERSION);
 }
 
-int
-tmux(int argc, const char **argv)
+void
+init(int argc, char **argv)
 {
 	char					*path = NULL, *label = NULL;
 	char					*cause, **var;
 	const char				*s, *cwd;
-	int					 opt, keys, feat = 0, fflag = 0;
-	uint64_t				 flags = 0;
+	int					 opt, keys, fflag = 0;
 	const struct options_table_entry	*oe;
 	u_int					 i;
 
@@ -532,7 +533,13 @@ tmux(int argc, const char **argv)
 	}
 	socket_path = path;
 	free(label);
+}
 
-	/* Pass control to the client. */
-	return client_main(osdep_event_init(), argc, argv, flags, feat);
+/* Pass control to the client. */
+int
+tmux(int argc, char **argv) {
+	struct event_base *event = osdep_event_init();
+	int i = client_main(event, argc, argv, flags, feat);
+	event_base_free(event);
+	return i;
 }

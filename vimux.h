@@ -3,6 +3,7 @@
 #include <sys/cdefs.h>
 __BEGIN_DECLS
 
+void init(int argc, const char **argv);
 int tmux(int argc, const char **argv);
 
 __END_DECLS

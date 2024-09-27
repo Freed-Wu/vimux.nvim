@@ -73,7 +73,7 @@ dist_libvimux_la_SOURCES = \
 	src/arguments.c \
 	src/attributes.c \
 	src/cfg.c \
-	src/client.c \
+	client.c \
 	src/cmd-attach-session.c \
 	src/cmd-bind-key.c \
 	src/cmd-break-pane.c \
