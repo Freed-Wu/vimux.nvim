@@ -12,6 +12,6 @@ mkShell {
     libtool
     ncurses.dev
     libevent.dev
-    yacc
+    bison
   ];
 }
