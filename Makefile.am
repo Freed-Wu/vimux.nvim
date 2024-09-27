@@ -168,7 +168,7 @@ dist_libvimux_la_SOURCES = \
 	src/options.c \
 	src/paste.c \
 	src/popup.c \
-	src/proc.c \
+	proc.c \
 	src/regsub.c \
 	src/resize.c \
 	src/screen-redraw.c \
@@ -177,7 +177,7 @@ dist_libvimux_la_SOURCES = \
 	src/server-acl.c \
 	src/server-client.c \
 	src/server-fn.c \
-	src/server.c \
+	server.c \
 	src/session.c \
 	src/spawn.c \
 	status.c \
