@@ -96,7 +96,7 @@ dist_libvimux_la_SOURCES = \
 	src/cmd-kill-window.c \
 	src/cmd-list-buffers.c \
 	src/cmd-list-clients.c \
-	src/cmd-list-keys.c \
+	cmd-list-keys.c \
 	src/cmd-list-panes.c \
 	src/cmd-list-sessions.c \
 	src/cmd-list-windows.c \
@@ -138,7 +138,7 @@ dist_libvimux_la_SOURCES = \
 	src/cmd-switch-client.c \
 	src/cmd-unbind-key.c \
 	src/cmd-wait-for.c \
-	src/cmd.c \
+	cmd.c \
 	src/colour.c \
 	src/compat.h \
 	src/control-notify.c \
@@ -180,11 +180,11 @@ dist_libvimux_la_SOURCES = \
 	src/server.c \
 	src/session.c \
 	src/spawn.c \
-	src/status.c \
+	status.c \
 	src/style.c \
 	tmux.c \
 	vimux.c \
-	src/tmux.h \
+	tmux.h \
 	src/tmux-protocol.h \
 	src/tty-acs.c \
 	src/tty-features.c \
