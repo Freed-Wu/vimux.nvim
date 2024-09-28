@@ -109,7 +109,7 @@ dist_libvimux_la_SOURCES = \
 	src/cmd-new-window.c \
 	src/cmd-parse.y \
 	src/cmd-paste-buffer.c \
-	src/cmd-pipe-pane.c \
+	cmd-pipe-pane.c \
 	src/cmd-queue.c \
 	src/cmd-refresh-client.c \
 	src/cmd-rename-session.c \
@@ -144,9 +144,9 @@ dist_libvimux_la_SOURCES = \
 	src/colour.c \
 	src/compat.h \
 	src/control-notify.c \
-	src/control.c \
+	control.c \
 	src/environ.c \
-	src/file.c \
+	file.c \
 	src/format.c \
 	src/format-draw.c \
 	src/grid-reader.c \
@@ -155,7 +155,7 @@ dist_libvimux_la_SOURCES = \
 	src/hyperlinks.c \
 	src/input-keys.c \
 	src/input.c \
-	src/job.c \
+	job.c \
 	src/key-bindings.c \
 	src/key-string.c \
 	src/layout-custom.c \
@@ -201,7 +201,7 @@ dist_libvimux_la_SOURCES = \
 	src/window-copy.c \
 	src/window-customize.c \
 	src/window-tree.c \
-	src/window.c \
+	window.c \
 	src/xmalloc.c \
 	src/xmalloc.h
 nodist_libvimux_la_SOURCES = osdep-@PLATFORM@.c
@@ -227,7 +227,7 @@ dist_libvimux_la_SOURCES += src/image.c src/image-sixel.c
 endif
 
 if NEED_FUZZING
-check_PROGRAMS = src/fuzz/input-fuzzer
+check_PROGRAMS = fuzz/input-fuzzer
 fuzz_input_fuzzer_LDFLAGS = $(FUZZING_LIBS)
 fuzz_input_fuzzer_LDADD = $(LDADD) $(libvimux_la_OBJECTS)
 endif
