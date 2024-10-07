@@ -33,15 +33,5 @@ end
 
 
 build = {
-  type = 'command',
-  build_command =
-  "autoreconf -vif && CFLAGS='$(CFLAGS) -I$(LUA_INCDIR)' ./configure --prefix=$(PREFIX) --libdir=$(LIBDIR) --datadir=$(LUADIR) && make clean && make",
-  -- make install cannot work
-  install_command = "scripts/install.sh",
-  install = {
-    lib = {
-      ".libs/vimux.so", ".libs/vimux.dylib", ".libs/vimux.dll"
-    }
-  },
-  copy_directories = $copy_directories,
+  type = 'autotools',
 }
