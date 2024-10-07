@@ -44,10 +44,6 @@ repos:
     rev: 3.0.0
     hooks:
       - id: check-mailmap
-      # https://github.com/koalaman/shellcheck/issues/2909
-      - id: shellcheck
-        exclude_types:
-          - zsh
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.1
     hooks:
@@ -76,13 +72,6 @@ repos:
       - id: markdownlint-cli2
         additional_dependencies:
           - markdown-it-texmath
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v4.0.0-alpha.8
-    hooks:
-      - id: prettier
-        exclude_types:
-          - markdown
-          - json
   # - repo: https://github.com/pre-commit/mirrors-clang-format
   #   rev: v18.1.8
   #   hooks:
@@ -98,8 +87,3 @@ repos:
     rev: v1.3.0
     hooks:
       - id: nixpkgs-fmt
-
-ci:
-  skip:
-    - shellcheck
-    - pyright
